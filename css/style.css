@@ -281,51 +281,29 @@ body {
 /* ========================================= */
 /* Bagian Headquarter                        */
 /* ========================================= */
-.headquarter-section {
-    padding: 80px 20px;
-    text-align: center;
-}
-
-.headquarter-section h2 {
-    font-size: 2.2rem;
-    font-weight: 700;
-    margin-bottom: 50px;
-    color: #333;
-}
-
-.circles-container {
-    display: flex;
-    justify-content: center;
-    gap: 80px;
-    flex-wrap: wrap; 
-}
-
-.circle-item {
-    text-align: center;
-}
-
-.circle-item p {
-    margin-top: 20px;
-    font-weight: 600;
-    color: #333;
-    font-size: 1.1rem;
-}
-
 .circle {
     width: 180px;
     height: 180px;
     border-radius: 50%;
     box-shadow: 0 5px 15px rgba(0,0,0,0.1);
     transition: transform 0.3s ease;
+    /* Tambahkan ini untuk menampung gambar */
+    overflow: hidden; 
+    display: flex; /* Untuk memposisikan gambar di tengah jika perlu */
+    justify-content: center;
+    align-items: center;
 }
 
 .circle:hover {
     transform: scale(1.05);
 }
 
-#circle-jakarta { background-image: url('asset/jakarta.jpg'); background-size: cover; background-position: center; }
-#circle-bandung { background-image: url('asset/bandung.jpg'); background-size: cover; background-position: center; }
-#circle-surabaya { background-image: url('asset/surabaya.jpg'); background-size: cover; background-position: center; }
+.circle-image {
+    width: 100%; /* Membuat gambar mengisi lebar lingkaran */
+    height: 100%; /* Membuat gambar mengisi tinggi lingkaran */
+    object-fit: cover; /* Memastikan gambar menutupi seluruh area tanpa terdistorsi */
+    border-radius: 50%; /* Memastikan gambar juga berbentuk lingkaran */
+}
 
 /* ========================================= */
 /* HALAMAN ABOUT REVO U (DESAIN BARU)        */
