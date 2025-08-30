@@ -1202,3 +1202,18 @@ body {
     visibility: visible;
     transform: translateY(0);
 }
+
+.nav-toggle { display: none; }
+.nav-toggle-label { display: none; cursor: pointer; z-index: 1001; }
+
+
+
+@media (max-width: 768px) {
+    .main-nav { display: none; position: absolute; top: 100%; left: 0; width: 100%; background-color: #ffffff; box-shadow: 0 4px 8px rgba(0,0,0,0.1); }
+    .main-nav ul { flex-direction: column; padding: 20px 0; }
+    .nav-toggle-label { display: block; } 
+    .hero-content-overlay h2 { font-size: 2.2rem; }
+    .message-container { flex-direction: column; }
+    .circles-container { gap: 40px; }
+    .circle { width: 150px; height: 150px; }
+}
